@@ -249,6 +249,209 @@
 
 }
 
+/* stories */
+
+.all-stories {
+    background-image: url(assets/bg.png), linear-gradient(to top, #FFF4DC, white);
+
+    padding-bottom: 60px;
+
+}
+
+.all-stories h2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.stories-container {
+    width: 100%;
+    background-image: url(assets/bg.png), linear-gradient(to top, #FFF4DC, white);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding:0px 27px;
+
+}
+
+
+.stories-button {
+    background-color: black;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: auto;
+
+}
+
+.right-stories {
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 80px;
+}
+
+.story-1 {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 80px;
+}
+
+.story-1 h2,
+.story-1 p,
+.story-2 h2,
+.story-2 p,
+.story-3 h2,
+.story-3 p,
+.story-4 h2,
+.story-4 p,
+.story-5 h2,
+.story-5 p {
+    padding-left: 20px;
+}
+
+.story-1 img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.story-1 button {
+    position: absolute;
+    left: 20px;
+    top: 58%;
+    bottom: 45%;
+    background-color: rgb(60, 216, 232);
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.story-2 {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+}
+
+.story-2 img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.story-2 button {
+    position: absolute;
+    left: 20px;
+    top: 58%;
+    bottom: 40%;
+    background-color: rgb(149 178 38);
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-3 {
+    position: relative;
+    background-color: rgb(255, 225, 255);
+    border: none;
+    border-radius: 10px;
+}
+
+.story-3 img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.story-3 button {
+    position: absolute;
+    left: 20px;
+    top: 58%;
+    bottom: 40%;
+    background-color: rgb(93 88 240);
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.story-4 {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+}
+
+.story-4 img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.story-4 button {
+    position: absolute;
+    left: 20px;
+    top: 58%;
+    bottom: 40%;
+    background-color: rgb(149 178 38);
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.story-5 {
+    position: relative;
+    background-color:rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+}
+
+.story-5 img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.story-5 button {
+    position: absolute;
+    left: 20px;
+    top: 58%;
+    bottom: 40%;
+    background-color: rgb(149 178 38);
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /* small device */
 
 @media screen and (max-width:576px) {
@@ -271,7 +474,8 @@
         border: 1px solid orange;
         margin: 0px;
     }
-
+    
+    /* banner */
     .banner-container {
         flex-direction: column;
         align-items: center;
@@ -291,7 +495,7 @@
         margin: 20px auto 0;
     }
 
-    
+    /* Curriculum */
     .curriculum-container {
         display: flex;
         flex-direction: column;
@@ -305,6 +509,116 @@
 
     .curriculum {
         text-align: center;
+    }
+ 
+    /* Stories */
+    .stories-container {
+        width: 100%;
+    }
+    .story-1 {
+        display: none;
+    }
+    .story-2{
+        position: relative;
+    }
+
+    .story-2 button {
+        position: absolute;
+        top: 40%;
+        bottom: 65%;
+    }
+  
+    .story-3{
+        position: relative;
+    }
+
+    .story-3 button {
+        position: absolute;
+        top: 40%;
+        bottom: 65%;
+    }
+  
+
+    .story-4{
+        position: relative;
+    }
+
+    .story-4 button {
+        position: absolute;
+        top: 40%;
+        bottom: 65%;
+    }
+  
+    .story-5{
+        position: relative;
+    }
+
+    .story-5 button {
+        position: absolute;
+        top: 40%;
+        bottom:65%;
+    }
+
+    .stories-container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        box-sizing: border-box;
+
+        background-image: url(assets/bg.png), linear-gradient(to top,#FFF4DC, white);
+    
+    }
+
+    .right-stories {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .right-stories>div {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .right-stories img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .right-stories h2,
+    .right-stories p {
+        padding: 10px;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .right-stories {
+        margin-bottom: 20px;
+    }
+
+
+    .right-stories button {
+        padding: 13px 10px;
+        font-size: 12px;
+    }
+
+    .all-stories {
+        width: 100%;
+        padding: 0 15px 50px 15px;
+        box-sizing: border-box;
     }
 
 
