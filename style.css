@@ -6,3 +6,174 @@
     font-variation-settings:
         "width" 100;
 }
+
+/* navbar Styles */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 186px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+
+}
+
+.nav-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+}
+
+.nav-button {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#nav-home {
+    color: orange;
+}
+
+#nav-abt {
+    color: rgb(66, 167, 207);
+}
+
+#nav-fac {
+    color: green;
+}
+
+#nav-ad {
+    color: red;
+}
+
+
+.hamburger {
+    width: 30px;
+    height: 25px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.hamburger div {
+    height: 4px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* banner */
+
+.banner-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.banner-text {
+    gap: 24px;
+}
+
+.banner-heading {
+    font-weight: bold;
+    font-size: 56px;
+}
+
+#ep {
+    color: orange;
+}
+
+#visions {
+    color: skyblue;
+}
+
+.banner-butn {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* marquee */
+.slide {
+    behavior: slide;
+    direction: left;
+    background-color: skyblue;
+    padding: 20px;
+    
+    color: white;
+    font-weight: bold;
+}
+
+/* small device */
+
+@media screen and (max-width:576px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar p,
+    .nav-menu,
+    .nav-button {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar {
+        border: 1px solid orange;
+        margin: 0px;
+    }
+
+    .banner-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-image {
+        order: -1;
+    }
+
+    .banner-text {
+        margin-top: 20px;
+    }
+
+    .banner-butn {
+        display: block;
+        margin: 20px auto 0;
+    }
+}
